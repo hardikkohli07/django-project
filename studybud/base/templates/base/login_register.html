@@ -17,6 +17,7 @@
     <p>Haven't Signed Up Yet?</p>
     <a href="{% url 'register' %}">Sign Up</a>
 </div>
+
 {% else %}
 <div>
     <form method="POST" action="">
@@ -28,5 +29,6 @@
     <p>Already Signed Up?</p>
     <a href="{% url 'login' %}">Login</a>
 </div>
+
 {% endif %}
 {% endblock content %}
